@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+       <record id="odoojs_student_action" model="ir.actions.act_window">
+           <field name="name">Estudiantes</field>
+           <field name="type">ir.actions.act_window</field>
+           <field name="res_model">odoojs.student</field>
+           <field name="view_mode">tree,form</field>
+           <field name="help" type="html">
+             <p class="oe_view_nocontent_create">
+               <strong>Bienvenido a estudiantes</strong>
+             </p><p>
+               Para usted agregar un nuevo estudiante dar click en Crear
+             </p>
+           </field>
+       </record>
+
+        <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+        <menuitem id="odoojs_student" name="Estudiantes" action="odoojs_student_action" sequence="0"/>
+        <!-- This Menu Item Must have a parent 
+                <menuitem id="odoojs_course_submenu" name="Mantenimiento de cursos" parent="odoojs_course_root" sequence=""/>
+                -->
+
+        <!-- This Menu Item must have a parent and an action -->
+      <!--   <menuitem id="odoojs_course_menu" name="Cursos" parent="odoojs_course_submenu" action="odoojs_course_action" sequence=""/>
+                -->
+
+    </data>
+</odoo>
