@@ -28,6 +28,7 @@
         'views/views.xml',
         'views/templates.xml',
         'views/course_view.xml',
+        'views/students_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
