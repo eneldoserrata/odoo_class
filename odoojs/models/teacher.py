@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, _testcapi
+from odoo import models, fields, api
 
 class Teacher(models.Model):
-    _name = 'odojs.teacher'
+    _name = 'odoojs.teacher'
 
     name = fields.Char("Profesores")
     sexo = fields.Char("Sexo")
