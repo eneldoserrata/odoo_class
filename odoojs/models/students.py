@@ -7,5 +7,6 @@ class Student(models.Model):
     name = fields.Char("Nombre")
     matricula = fields.Char("Matricula")
     bird_date = fields.Datetime("Fecha de nacimiento")
-
-
+    
+    course_id = fields.Many2one("odoojs.course")    
+    
