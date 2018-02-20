@@ -17,7 +17,7 @@
        </record>
 
         <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
-        <menuitem id="odoojs_student" name="Estudiantes" action="odoojs_student_action" parent="odoojs_course_submenu" sequence="0"/>
+        <menuitem id="odoojs_student" name="Estudiantes" action="odoojs_student_action" parent="odoojs_course_submenu" sequence="2"/>
         <!-- This Menu Item Must have a parent 
                 <menuitem id="odoojs_course_submenu" name="Mantenimiento de cursos" parent="odoojs_course_root" sequence=""/>
                 -->
