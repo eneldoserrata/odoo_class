@@ -8,3 +8,4 @@ class Course(models.Model):
 
     name = fields.Char("Curso")
     course_date = fields.Datetime("Fecha del curso")
+    teacher_id = fields.Many2one("odoojs.teacher", string="Profesor")

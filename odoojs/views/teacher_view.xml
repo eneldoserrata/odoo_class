@@ -18,9 +18,9 @@
         <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
         <!--<menuitem id="odoojs_course_root" name="Cursos" sequence="0"/>-->
         <!-- This Menu Item Must have a parent -->
-        <menuitem id="odoojs_teacher_submenu" name="Mantenimiento de Profesores" parent="odoojs_course_root" sequence=""/>
+        <!--<menuitem id="odoojs_teacher_submenu" name="Mantenimiento de Profesores" parent="odoojs_course_root" sequence=""/>-->
         <!-- This Menu Item must have a parent and an action -->
-        <menuitem id="odoojs_teacher_menu" name="Profesores" parent="odoojs_teacher_submenu" action="odoojs_teacher_action"
+        <menuitem id="odoojs_teacher_menu" name="Profesores" parent="odoojs_course_submenu" action="odoojs_teacher_action"
                   sequence=""/>
 
     </data>
