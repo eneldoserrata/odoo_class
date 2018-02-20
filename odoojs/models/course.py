@@ -8,7 +8,13 @@ class Course(models.Model):
 
     name = fields.Char("Curso")
     course_date = fields.Datetime("Fecha del curso")
-
     student_ids = fields.One2many("odoojs.student","course_id")
-    
     teacher_id = fields.Many2one("odoojs.teacher", string="Profesor")
+    tags_ids = fields.Many2many("odoojs.course.tags")
+
+
+
+class CourseTags(models.Model):
+    _name = "odoojs.course.tags"
+
+    name = fields.Char("Etiquetas")

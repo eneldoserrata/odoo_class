@@ -2,26 +2,58 @@
 <odoo>
     <data>
 
-       <record id="odoojs_course_action" model="ir.actions.act_window">
-           <field name="name">Cursos</field>
-           <field name="type">ir.actions.act_window</field>
-           <field name="res_model">odoojs.course</field>
-           <field name="view_mode">tree,form</field>
-           <field name="help" type="html">
-             <p class="oe_view_nocontent_create">
-               <strong>Bienvenido a cursos!</strong>
-             </p><p>
-               Para usted crear nuesvo cursos presione el boton crear.
-             </p>
-           </field>
-       </record>
+
+        <record id="course_form" model="ir.ui.view">
+            <field name="name">course_form</field>
+            <field name="model">odoojs.course</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group col="4">
+                            <field name="name"/>
+                            <field name="course_date"/>
+                            <field name="tags_ids" widget="many2many_tags"/>
+                        </group>
+                        <notebook>
+                            <page string="Profesor">
+                                <group string="Informacion del curso">
+                                    <field name="teacher_id"/>
+                                </group>
+                            </page>
+                            <page string="Estudiantes">
+                                <group>
+                                    <field name="student_ids"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="odoojs_course_action" model="ir.actions.act_window">
+            <field name="name">Cursos</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">odoojs.course</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <strong>Bienvenido a cursos!</strong>
+                </p>
+                <p>
+                    Para usted crear nuesvo cursos presione el boton crear.
+                </p>
+            </field>
+        </record>
 
         <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
         <menuitem id="odoojs_course_root" name="Cursos" sequence="0"/>
         <!-- This Menu Item Must have a parent -->
         <menuitem id="odoojs_course_submenu" name="Mantenimiento de cursos" parent="odoojs_course_root" sequence=""/>
         <!-- This Menu Item must have a parent and an action -->
-        <menuitem id="odoojs_course_menu" name="Cursos" parent="odoojs_course_submenu" action="odoojs_course_action" sequence=""/>
+        <menuitem id="odoojs_course_menu" name="Cursos" parent="odoojs_course_submenu" action="odoojs_course_action"
+                  sequence=""/>
 
 
     </data>

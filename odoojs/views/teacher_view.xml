@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+
+
+
+
         <record id="odoojs_teacher_action" model="ir.actions.act_window">
             <field name="name">Profesores</field>
             <field name="type">ir.actions.act_window</field>
@@ -15,6 +19,9 @@
                 </p>
             </field>
         </record>
+
+
+
         <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
         <!--<menuitem id="odoojs_course_root" name="Cursos" sequence="0"/>-->
         <!-- This Menu Item Must have a parent -->
