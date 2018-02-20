@@ -22,7 +22,7 @@
                             </page>
                             <page string="Estudiantes">
                                 <group>
-                                    <field name="student_ids"/>
+                                    <field string="Estudiantes" name="student_ids" widget="handle"/>
                                 </group>
                             </page>
                         </notebook>
