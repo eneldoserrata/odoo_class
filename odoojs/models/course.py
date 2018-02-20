@@ -11,3 +11,4 @@ class Course(models.Model):
 
     student_ids = fields.One2many("odoojs.student","course_id")
     
+    teacher_id = fields.Many2one("odoojs.teacher", string="Profesor")

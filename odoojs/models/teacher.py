@@ -6,4 +6,4 @@ class Teacher(models.Model):
     _name = 'odoojs.teacher'
 
     name = fields.Char("Profesores")
-    sexo = fields.Char("Sexo")
+    sexo = fields.Selection([("F","Femenino"), ("M", "Masculino")], string="Sexo")
