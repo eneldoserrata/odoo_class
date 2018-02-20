@@ -22,9 +22,9 @@
                                 <group string="Informacion de los Estudiantes">
                                     <field string="Estudiantes" name="student_ids">
                                         <tree>
-                                            <field name="sequence" widget="handle" />
-                                            <field name="name" />
-                                            <field name="matricula" />
+                                            <field name="sequence" widget="handle"/>
+                                            <field name="name"/>
+                                            <field name="matricula"/>
                                         </tree>
                                     </field>
                                 </group>
@@ -43,7 +43,7 @@
                 <p class="oe_view_nocontent_create">
                     <strong>Bienvenido a cursos!</strong>
                 </p>
-                <p>                    Para usted crear nuesvo cursos presione el boton crear.                </p>
+                <p>Para usted crear nuesvo cursos presione el boton crear.</p>
             </field>
         </record>
         <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
@@ -51,6 +51,19 @@
         <!-- This Menu Item Must have a parent -->
         <menuitem id="odoojs_course_submenu" name="Mantenimiento de cursos" parent="odoojs_course_root" sequence=""/>
         <!-- This Menu Item must have a parent and an action -->
-        <menuitem id="odoojs_course_menu" name="Cursos" parent="odoojs_course_submenu" action="odoojs_course_action" sequence=""/>
+        <menuitem id="odoojs_course_menu" name="Cursos" parent="odoojs_course_submenu" action="odoojs_course_action"
+                  sequence=""/>
+
+
+        <record id="action_client_odoojs" model="ir.actions.client">
+            <field name="name">Open odoojs Menu</field>
+            <field name="tag">odoojs.ui</field>
+            <!--<field name="params" eval="{'menu_id': ref('menu_point_root')}"/>-->
+        </record>
+
+
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="odoojs_menu" name="Odoo js" parent="odoojs_course_root" action="action_client_odoojs" sequence=""/>
     </data>
 </odoo>

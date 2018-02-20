@@ -8,5 +8,4 @@ class Student(models.Model):
     matricula = fields.Integer("Matricula")
     bird_date = fields.Datetime("Fecha de nacimiento")
     sequence = fields.Integer('Orden', help="Sequence for the handle.",default=10)
-    course_id = fields.Many2one("odoojs.course")    
-    
+    course_id = fields.Many2one("odoojs.course")
