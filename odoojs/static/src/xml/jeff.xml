@@ -1,0 +1,27 @@
+<template>
+
+<t t-name="odoojs_jeff_widget">
+
+    <!-- template code -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3">
+        <label for="">Curso</label>
+		</div>
+		<div class="col-md-3">
+        <input type="text" id="input_curso"/>
+		</div>
+		<div class="col-md-3">
+        <label for="">Fecha</label>
+		</div>
+        <div class="col-md-3">
+        <input type="date" name="" id="input_date"/>
+		</div>
+	</div>
+</div>
+</t>
+
+
+
+
+</template>

@@ -7,14 +7,18 @@
             <field name="tag">odoojs.ui</field>
             <!--<field name="params" eval="{'menu_id': ref('menu_point_root')}"/>-->
         </record>
-
+        <record id="action_client_jeff" model="ir.actions.client">
+            <field name="name">Open Jeff Menu</field>
+            <field name="tag">jeff.ui</field>
+            <!--<field name="params" eval="{'menu_id': ref('menu_point_root')}"/>-->
+        </record>
 
         <!-- This Menu Item Must have a parent -->
         <menuitem id="odoojs_root" name="Odoojs" parent="odoojs_course_root" sequence=""/>
         <!-- This Menu Item must have a parent and an action -->
         <menuitem id="odoojs_menu" name="Main Widget" parent="odoojs_root" action="action_client_odoojs"
                   sequence=""/>
-        <menuitem id="odoojs_menu_jeff" name="Jeff" parent="odoojs_root" action="action_client_odoojs"
+        <menuitem id="odoojs_menu_jeff" name="Jeff" parent="odoojs_root" action="action_client_jeff"
                   sequence=""/>
         <menuitem id="odoojs_menu_jorge" name="Jorge" parent="odoojs_root" action="action_client_odoojs"
                   sequence=""/>
