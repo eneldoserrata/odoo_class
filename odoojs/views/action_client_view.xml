@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="action_client_odoojs" model="ir.actions.client">
+            <field name="name">Open odoojs Menu</field>
+            <field name="tag">odoojs.ui</field>
+            <!--<field name="params" eval="{'menu_id': ref('menu_point_root')}"/>-->
+        </record>
+
+
+        <!-- This Menu Item Must have a parent -->
+        <menuitem id="odoojs_root" name="Odoojs" parent="odoojs_course_root" sequence=""/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="odoojs_menu" name="Main Widget" parent="odoojs_root" action="action_client_odoojs"
+                  sequence=""/>
+        <menuitem id="odoojs_menu_jeff" name="Jeff" parent="odoojs_root" action="action_client_odoojs"
+                  sequence=""/>
+        <menuitem id="odoojs_menu_jorge" name="Jorge" parent="odoojs_root" action="action_client_odoojs"
+                  sequence=""/>
+        <menuitem id="odoojs_menu_frank" name="Frank" parent="odoojs_root" action="action_client_odoojs"
+                  sequence=""/>
+
+
+    </data>
+</odoo>

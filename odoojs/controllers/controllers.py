@@ -11,13 +11,3 @@ class Odoojs(http.Controller):
         return http.request.render('odoojs.index', {
             'teachers': Teachers.search([])
         })
-
-    # @http.route('/odoojs/<name>/', auth='public')
-    # def index(self, name):
-    #     return '<h1>{}</h1>'.format(name)
-    #
-    #
-    # @http.route('/odoojs/<int:id>/', auth='public')
-    # def index(self, id):
-    #     Teachers = http.request.env['odoojs.teacher']
-    #     return '<h1>{}</h1>'.format(Teachers.search([('id','=',id)]).name)

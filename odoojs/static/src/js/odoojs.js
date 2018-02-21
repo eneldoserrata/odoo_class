@@ -4,11 +4,20 @@ odoo.define('odoojs.odoojs', function (require) {
     var core = require('web.core');
 
     var Odoojs = Widget.extend({
+        template: "odoojs_main_widget",
+        start: function () {
+            this.$el.find(".mybutton").on("click", function () {
+                alert("Hello")
 
-        start: function() {
-            console.log("pet store home page loaded");
-            this.$el.append("<button id='get_advance_paper' class='btn btn-default btn-block'><div class='stat_button_icon fa fa-level-up'></div><div>Sacar papel</div></button>");
+            });
 
+            this._rpc({
+                "model": "odoojs.course",
+                "method": "search",
+                "args": [[]]
+            }).then(function (value) {
+                console.log(value)
+            })
         }
     });
 

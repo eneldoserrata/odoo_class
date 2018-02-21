@@ -55,15 +55,5 @@
                   sequence=""/>
 
 
-        <record id="action_client_odoojs" model="ir.actions.client">
-            <field name="name">Open odoojs Menu</field>
-            <field name="tag">odoojs.ui</field>
-            <!--<field name="params" eval="{'menu_id': ref('menu_point_root')}"/>-->
-        </record>
-
-
-
-        <!-- This Menu Item must have a parent and an action -->
-        <menuitem id="odoojs_menu" name="Odoo js" parent="odoojs_course_root" action="action_client_odoojs" sequence=""/>
     </data>
 </odoo>
