@@ -1,0 +1,34 @@
+<template>
+
+
+
+    <t t-name="dropdown_teacher">
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="btn-group">
+
+                        <button class="btn btn-default dropdown">
+                            Profesores
+                        </button>
+                        
+                        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+
+                        </ul>
+                    </div>
+
+                    <div class="col-md-8">
+
+                        <input type="text" readonly="1" name="Profesor" id="selected_teacher" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+</template>

@@ -33,7 +33,8 @@
         'views/action_client_view.xml',
     ],
     # only loaded in demonstration mode
-    'qweb': ['static/src/xml/odoojs.xml'],
+    'qweb': ['static/src/xml/odoojs.xml',
+            'static/src/xml/jorge.xml'],
     'demo': [
         'demo/demo.xml',
     ],
