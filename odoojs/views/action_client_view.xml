@@ -10,7 +10,7 @@
 
          <record id="action_client_jorge" model="ir.actions.client">
             <field name="name">Open Jorge Widget</field>
-            <field name="tag">odoojs.jorge</field>
+            <field name="tag">jorge.ui</field>
         </record>
 
 
