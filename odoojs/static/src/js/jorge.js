@@ -19,7 +19,7 @@ odoo.define('odoojs.jorge', function (require) {
 
                 var lista = ""
                 lista_profesores.forEach(element => {
-                    lista =+ "<li class=\"teacher \">" + element.name + "</li>"
+                    lista = lista+ "<li class=\"teacher \">" + element.name + "</li>"
                 });
 
                 console.log(self.find(".dropdown-menu").append(lista));
