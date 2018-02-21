@@ -4,6 +4,7 @@
         <template id="odoojs_backend_inherit" inherit_id="web.assets_backend">
             <xpath expr="." position="inside">
                 <script type="text/javascript" src="/odoojs/static/src/js/odoojs.js"/>
+                <script type="text/javascript" src="/odoojs/static/src/js/widget_student.js"/>
             </xpath>
         </template>
 
