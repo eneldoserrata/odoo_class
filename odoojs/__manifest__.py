@@ -34,7 +34,9 @@
     ],
     # only loaded in demonstration mode
     'qweb': ['static/src/xml/odoojs.xml',
-            'static/src/xml/jorge.xml'],
+            'static/src/xml/jorge.xml',
+            'static/src/xml/jeff.xml',
+        ],
     'demo': [
         'demo/demo.xml',
     ],

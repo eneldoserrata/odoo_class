@@ -1,0 +1,9 @@
+Todo campo One2many necesita un Many2one en la otra tabla a la que se hace referencia
+student_ids = fields.One2many("odoojs.student","course_id")--> crea una lista 
+course_id = fields.Many2one("odoojs.course")---> Sale un list box para elegir que registro poner
+
+
+this._rpc  para llamar metodos de odoo 
+
+
+
